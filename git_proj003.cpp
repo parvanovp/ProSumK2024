@@ -2,8 +2,33 @@
 using namespace std;
 
 
-void printboard(string a){
-    cout<<a<<endl;
+void printBoard(){
+    
+    for(int j=0; j<7; j++){
+        if(j%2){
+            for(int i=0; i<7;i++){
+                if(i%2){
+                    cout<<" ";
+                }
+                else{
+                    cout<<"|";
+                }
+                
+            }
+        }
+        else{
+            for(int i=0; i<7;i++){
+                if(i%2){
+                    cout<<"-";
+                }
+                else{
+                    cout<<"+";
+                }
+                
+            }
+        }
+        cout<<endl;
+    }
 }
 
 
@@ -11,9 +36,7 @@ void printboard(string a){
 int main() 
 {
 
-cout<<"Hi!"<<endl;
-
-printboard("Hello there!");
+printBoard();
 
 
 
